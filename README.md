@@ -9,6 +9,7 @@ _This custom function will store the custom variable name and the Google Sheet f
 
 > QVAR(name)
 
-_This custom function will access the stored variable name and return its value._ **E.g.** `=QVAR("OGPrice")`
+_This custom function will access the stored variable name and return its value._ **E.g.** `=QVAR("OGPrice")` 
+_(This will then return the `OGPrice` variable, which is the returned value of the specfic Google Sheet function `=MID(A2,4,8)`)_
 
 _For more context, you can view a sample demonstration [here](https://imgur.com/a/3Sivk0K)._
