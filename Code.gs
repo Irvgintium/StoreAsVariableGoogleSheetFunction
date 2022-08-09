@@ -6,7 +6,7 @@
  */
 
 /**
- * Stores any cell value & their data as variables.
+ * Stores any cell value & their data as variables in {"variable name1",value1,"variable name2",value2} format.
  *
  * @param {array object} input The value to multiply.
  * @return none.
@@ -37,9 +37,9 @@ function QVAR(name) { //Queries a variable then returns its value
 }
 
 /**
- * Force deletes all variables stored done by the user. Please be careful on using as this deletes everything!
- *
- * @param {none} n/a.
+ * Force deletes all variables stored by the user. 
+ * 
+ * @param {boolean}.
  * @return n/a.
  * @customfunction
  */
