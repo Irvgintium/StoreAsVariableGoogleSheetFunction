@@ -6,14 +6,15 @@ This is a simple Google Apps Script project where I use the functionality of the
 
 _This custom function will store the custom variable name and the Google Sheet function returned value._
 **E.g.:** 
-```ruby
+```javascript
+//Array value format should in {"variable name", value,...} (seperated in comma inside of a parentheses {}).  
 =STOREVAR({"OGPrice",MID(A2,4,8),"ACPrice",MID(B2,4,8)})
 ```
 
 > QVAR(name)
 
 _This custom function will access the stored variable name and return its value._ **E.g.:**
-```ruby
+```javascript
 =QVAR("OGPrice")
 ```
 _(This will then return the `OGPrice` variable, which is the returned value of the specfic Google Sheet function `=MID(A2,4,8)`)_
