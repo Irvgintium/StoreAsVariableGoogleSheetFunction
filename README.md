@@ -7,8 +7,8 @@ This is a simple Google Apps Script project where I use the functionality of the
 _This custom function will store the custom variable name and the Google Sheet function returned value._
 **E.g.:** 
 ```javascript
-//Array value format should in {"variable name", value,...} (seperated in comma inside of a parentheses {}).  
 =STOREVAR({"OGPrice",MID(A2,4,8),"ACPrice",MID(B2,4,8)})
+//Array value format should in {"variable name", value,...} (seperated in comma inside of a parentheses {}).  
 ```
 
 > QVAR(name)
@@ -16,8 +16,8 @@ _This custom function will store the custom variable name and the Google Sheet f
 _This custom function will access the stored variable name and return its value._ **E.g.:**
 ```javascript
 =QVAR("OGPrice")
+//This will return the `OGPrice` value, which is the value of the specfic Google Sheet function `=MID(A2,4,8)` that was associated with it.
 ```
-_(This will then return the `OGPrice` variable, which is the returned value of the specfic Google Sheet function `=MID(A2,4,8)`)_
 
 >The benefit of this instead of using `Named Ranges` is that you can store values in an empty cell for a cleaner setup. `Named Ranges` can't hide the cell range it is referrring to.
 
